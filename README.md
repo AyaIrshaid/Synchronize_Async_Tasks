@@ -1,4 +1,4 @@
-# Synchronise_Async_Tasks
+# Synchronize Async Tasks
 
 Get notified when a list of Async tasks are done using 'dispatch_group'.
 
