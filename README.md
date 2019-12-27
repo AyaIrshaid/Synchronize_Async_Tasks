@@ -1,6 +1,6 @@
 # Synchronize Async Tasks
 
-Get notified when a list of Async tasks are done using 'dispatch_group'.
+Get notified when a list of Async tasks are done using `dispatch_group`.
 
 ![Notified after all Async tasks are done.](images/screenshots/1.gif)
 
@@ -14,7 +14,9 @@ Get notified when a list of Async tasks are done using 'dispatch_group'.
 
 ### In `ViewController+SyncTasks.m` check the following: 
  
-**1.** Call async tasks: These are API calls to get some data.
+**1.** Call async tasks.
+
+> I used API calls to get some data.
 
 ```objective-c
 // Call async tasks
@@ -38,7 +40,7 @@ dispatch_group_leave(self->serviceGroup);
 ```
 
 **4.** Get notified when all tasks are completed.
-> this is when all 'dispatch_group_leave' have been called,
+> When all 'dispatch_group_leave' have been called,
 > we are notified that the action is done.
 
 ```objective-c
